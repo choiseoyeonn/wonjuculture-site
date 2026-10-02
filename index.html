@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>원주문화재단</title>
+
+  <!-- 페이지 정보 -->
+  <meta name="description" content="원주문화재단 메인 페이지 리디자인 — 문화행사, 예술지원, 공간대관, 소식을 한곳에서 만나는 반응형 웹사이트">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="원주문화재단 메인 페이지 리디자인">
+  <meta property="og:description" content="문화행사, 예술지원, 공간대관, 소식을 한곳에서 만나는 반응형 웹사이트">
+  <meta property="og:image" content="images/og-image.jpg">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== 헤더 ===== -->
+  <header class="header">
+    <h1 class="logo-title">
+      <a href="#" class="logo">
+        <img class="logo-white" src="images/logo-white.png" alt="원주문화재단">
+        <img class="logo-color" src="images/logo.png" alt="원주문화재단">
+      </a>
+    </h1>
+
+    <!-- 메뉴 -->
+    <nav class="menu">
+      <div class="menu-item">
+        <a href="#event" class="menu-link">문화행사</a>
+        <ul class="sub">
+          <li><a href="#">행사찾기</a></li>
+          <li><a href="#">문화달력</a></li>
+          <li><a href="#">대표축제</a></li>
+        </ul>
+      </div>
+      <div class="menu-item">
+        <a href="#support" class="menu-link">예술지원</a>
+        <ul class="sub">
+          <li><a href="#">지원공고</a></li>
+          <li><a href="#">선정결과</a></li>
+        </ul>
+      </div>
+      <div class="menu-item">
+        <a href="#space" class="menu-link">공간대관</a>
+        <ul class="sub">
+          <li><a href="#">공간안내</a></li>
+          <li><a href="#">대관일정</a></li>
+          <li><a href="#">대관신청</a></li>
+        </ul>
+      </div>
+      <div class="menu-item">
+        <a href="#" class="menu-link">문화정보</a>
+        <ul class="sub">
+          <li><a href="#">예술인DB</a></li>
+          <li><a href="#">예술단체</a></li>
+          <li><a href="#">행사등록</a></li>
+          <li><a href="#">문화기록</a></li>
+        </ul>
+      </div>
+      <div class="menu-item">
+        <a href="#news" class="menu-link">소식공고</a>
+        <ul class="sub">
+          <li><a href="#">공지사항</a></li>
+          <li><a href="#">외부소식</a></li>
+          <li><a href="#">보도자료</a></li>
+          <li><a href="#">채용공고</a></li>
+          <li><a href="#">문의하기</a></li>
+        </ul>
+      </div>
+      <div class="menu-item">
+        <a href="#about" class="menu-link">재단안내</a>
+        <ul class="sub">
+          <li><a href="#">재단소개</a></li>
+          <li><a href="#">조직업무</a></li>
+          <li><a href="#">사업소개</a></li>
+          <li><a href="#">정보공개</a></li>
+          <li><a href="#">윤리경영</a></li>
+          <li><a href="#">협력기관</a></li>
+          <li><a href="#">오시는 길</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- 아이콘 -->
+    <div class="util">
+      <button type="button" class="icon-btn search-open" aria-label="통합검색"><img class="icon" src="images/icon-search.png" alt=""></button>
+      <button type="button" class="icon-btn" aria-label="로그인"><img class="icon" src="images/icon-my.png" alt=""></button>
+      <button type="button" class="icon-btn allmenu-open" aria-label="전체메뉴" aria-expanded="false"><img class="icon" src="images/icon-menu.png" alt=""></button>
+    </div>
+
+    <!-- 전체메뉴 -->
+    <div class="allmenu-dim"></div>
+    <nav class="allmenu" aria-label="전체 메뉴">
+      <div class="allmenu-head">
+        <img src="images/logo.png" alt="원주문화재단" width="84" height="50">
+        <button type="button" class="allmenu-close" aria-label="전체메뉴 닫기"><svg class="close-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+      </div>
+      <div class="allmenu-inner"></div>
+    </nav>
+
+    <!-- 검색창 -->
+    <div class="search-panel">
+      <div class="search-inner">
+        <form class="search-form" onsubmit="event.preventDefault()">
+          <input type="search" placeholder="행사, 지원공고, 공간 이름을 검색하세요" aria-label="검색어">
+          <button type="submit" class="search-submit"><img class="icon" src="images/icon-search.png" alt="">검색</button>
+        </form>
+        <div class="keywords">
+          <strong>인기 검색어</strong>
+          <button type="button">#대관신청</button>
+          <button type="button">#창작지원</button>
+          <button type="button">#한지문화제</button>
+          <button type="button">#원-라이브</button>
+          <button type="button">#문화예술교육</button>
+          <button type="button">#채용</button>
+        </div>
+      </div>
+      <button type="button" class="icon-btn search-close" aria-label="검색창 닫기"><svg class="close-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+  </header>
+
+  <!-- ===== 1. 메인 비주얼 ===== -->
+  <section class="hero">
+
+    <!-- 슬라이드 1 -->
+    <div class="slide active">
+      <div class="hero-bg">
+        <img src="images/poster-main.jpg" alt="">
+      </div>
+      <div class="promo">
+        <div class="promo-text">
+          <span class="tag">공연</span>
+          <h2>&lt;브라소닛 빅밴드와 앰비규어스 <br>댄스컴퍼니, Body ＆ Voice&gt;</h2>
+          <div class="promo-info">
+            <p>일시 : 2026. 10. 31.(토) 14:00</p>
+            <p>장소 : 치악예술관</p>
+          </div>
+          <div class="btn-group">
+            <a href="#" class="btn btn-line-white">자세히 보기</a>
+            <a href="#" class="btn btn-pink">신청·예매</a>
+          </div>
+        </div>
+        <img class="promo-poster" src="images/poster-main.jpg" alt="Body & Voice 포스터">
+      </div>
+    </div>
+
+    <!-- 슬라이드 2 -->
+    <div class="slide">
+      <div class="hero-bg">
+        <img src="images/poster-wonlive.jpg" alt="">
+      </div>
+      <div class="promo">
+        <div class="promo-text">
+          <span class="tag">공연</span>
+          <h2>2026 [원-라이브] <br>The Stage We Wanted</h2>
+          <div class="promo-info">
+            <p>기간 : 2026. 08. 21 ~ 2026. 12. 12</p>
+            <p>장소 : 태장공연장 및 원주시 일원</p>
+          </div>
+          <div class="btn-group">
+            <a href="#" class="btn btn-line-white">자세히 보기</a>
+          </div>
+        </div>
+        <img class="promo-poster" src="images/poster-wonlive.jpg" alt="원-라이브 포스터">
+      </div>
+    </div>
+
+    <!-- 슬라이드 제어 -->
+    <div class="slide-control">
+      <button class="prev"><img src="images/slide-left.png" alt="이전" width="8" height="14"></button>
+      <div class="progress"><span></span></div>
+      <button class="next"><img src="images/slide-right.png" alt="다음" width="8" height="14"></button>
+      <button class="pause"><img src="images/slide-pause.png" alt="정지" width="9" height="14"></button>
+    </div>
+  </section>
+
+  <!-- ===== 2. 문화행사 ===== -->
+  <section class="event" id="event">
+    <div class="inner">
+      <div class="title">
+        <p class="title-small">문화행사</p>
+        <h2>문화를 만나다</h2>
+      </div>
+
+      <div class="filter">
+        <button class="active">전체</button>
+        <button>공연</button>
+        <button>전시</button>
+        <button>교육·체험</button>
+        <button>행사·축제</button>
+        <button>기타</button>
+      </div>
+
+      <div class="event-box">
+        <div class="event-text">
+          <div class="event-top"></div>
+
+          <div class="event-bottom">
+            <div class="pager">
+              <div class="pager-bar"></div>
+              <div class="pager-btn">
+                <button class="event-prev"><img src="images/event-arrow-left.png" alt="이전" width="6" height="10"></button>
+                <button class="event-next"><img src="images/event-arrow-right.png" alt="다음" width="6" height="10"></button>
+              </div>
+            </div>
+            <a href="#" class="more">전체 행사 보기 &nbsp;→</a>
+          </div>
+        </div>
+
+        <div class="event-posters"></div>
+
+        <p class="event-empty">현재 진행 중인 행사가 없습니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 3. 예술지원 ===== -->
+  <section class="support" id="support">
+    <div class="inner">
+      <div class="title-row">
+        <div class="title">
+          <p class="title-small">예술지원</p>
+          <h2>예술을 응원하다</h2>
+        </div>
+        <a href="#" class="more">전체 공고 보기 &nbsp;→</a>
+      </div>
+
+      <p class="notice-now">
+        <strong>현재 접수 중인 공모가 없습니다.</strong>
+        <span>다음 공모 : 2027 문화예술지원사업 · 2027년 2월 예정</span>
+      </p>
+
+      <ul class="support-list">
+        <li>
+          <span class="status">접수 종료</span>
+          <div class="support-text">
+            <p class="name">2026 생활문화예술 역량강화사업 [원-라이브] 참가팀 모집</p>
+            <p class="target">지원 대상 : 원주 대중음악 밴드·통기타동호회</p>
+          </div>
+          <p class="date">접수 06.04 ~ 06.17</p>
+          <a href="#" class="btn btn-small">선정 결과</a>
+        </li>
+        <li>
+          <span class="status">접수 종료</span>
+          <div class="support-text">
+            <p class="name">2026 지역브랜드지원사업 신규단체 모집 공고</p>
+            <p class="target">지원 대상 : 원주 예술단체</p>
+          </div>
+          <p class="date">접수 06.01 ~ 06.16</p>
+          <a href="#" class="btn btn-small">선정 결과</a>
+        </li>
+        <li>
+          <span class="status">접수 종료</span>
+          <div class="support-text">
+            <p class="name">2026 문화예술지원사업 모집 공고</p>
+            <p class="target">지원 대상 : 원주 예술인·단체·동아리</p>
+          </div>
+          <p class="date">접수 02.09 ~ 02.25</p>
+          <a href="#" class="btn btn-small">선정 결과</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== 4. 공간대관 ===== -->
+  <section class="space" id="space">
+    <div class="space-bg"></div>
+    <div class="inner">
+      <div class="space-tab-wrap">
+        <button type="button" class="space-arrow space-arrow-left" aria-label="이전 공간 탭 보기"><img src="images/slide-left.png" alt="" width="8" height="14"></button>
+        <button type="button" class="space-arrow space-arrow-right" aria-label="다음 공간 탭 보기"><img src="images/slide-right.png" alt="" width="8" height="14"></button>
+        <div class="space-tab" role="tablist" aria-label="문화공간 선택">
+          <button type="button" role="tab" aria-selected="true">남산골문화센터</button>
+          <button type="button" role="tab" aria-selected="false">치악예술관</button>
+          <button type="button" role="tab" aria-selected="false">댄싱공연장</button>
+          <button type="button" role="tab" aria-selected="false">원주생활문화센터</button>
+          <button type="button" role="tab" aria-selected="false">아르코공연연습센터</button>
+          <button type="button" role="tab" aria-selected="false">태장공연장</button>
+          <button type="button" role="tab" aria-selected="false">원주아트갤러리</button>
+        </div>
+      </div>
+
+      <div class="space-content">
+        <h2 class="space-name">남산골문화센터</h2>
+        <p class="space-desc">과거와 현재, 미래가 공존하는 원주의 복합문화공간</p>
+        <hr>
+        <ul class="space-info">
+          <li class="space-address"><img src="images/icon-location.png" alt="" width="14" height="17"><span class="text">원주시 향교길 77 남산골문화센터</span></li>
+          <li class="space-rooms"><img src="images/icon-space.png" alt="" width="14" height="15"><span class="text">전시실 · 프로그램실 · 연습실</span></li>
+          <li class="space-phone"><img src="images/icon-phone.png" alt="" width="14" height="14"><span class="text">033-760-9837</span></li>
+        </ul>
+        <div class="btn-group">
+          <a href="#" class="btn btn-line-white">자세히 보기</a>
+          <a href="#" class="btn btn-pink">대관 신청</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 5. 소식공고 ===== -->
+  <section class="news" id="news">
+    <div class="inner">
+      <div class="title-row">
+        <div class="title">
+          <p class="title-small">소식공고</p>
+          <h2>소식을 전하다</h2>
+        </div>
+        <a href="#" class="more">전체 보기 &nbsp;→</a>
+      </div>
+
+      <div class="news-tab" role="tablist" aria-label="소식 분류">
+        <span class="news-bar" aria-hidden="true"></span>
+        <button type="button" role="tab" aria-selected="true">공지사항</button>
+        <button type="button" role="tab" aria-selected="false">외부소식</button>
+        <button type="button" role="tab" aria-selected="false">보도자료</button>
+        <button type="button" role="tab" aria-selected="false">채용공고</button>
+      </div>
+
+      <ul class="news-list" role="tabpanel"></ul>
+    </div>
+  </section>
+
+  <!-- ===== 6. 공식 SNS ===== -->
+  <section class="sns">
+    <div class="inner">
+      <div class="title">
+        <p class="title-small">공식 SNS</p>
+        <h2>함께 이어지다</h2>
+      </div>
+
+      <div class="sns-list">
+        <a href="https://blog.naver.com/wcf_kr" class="sns-blog" target="_blank" rel="noopener">
+          <span class="sns-icon"><img src="images/icon-blog.png" alt="" loading="lazy"></span>
+          <span class="sns-name">네이버 블로그</span>
+          <span class="sns-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="https://www.instagram.com/wcf.kr/" class="sns-insta" target="_blank" rel="noopener">
+          <span class="sns-icon"><img src="images/icon-instagram.png" alt="" loading="lazy"></span>
+          <span class="sns-name">인스타그램</span>
+          <span class="sns-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="https://www.youtube.com/channel/UCZX7TighfXnQ3HPpUKm2MGA" class="sns-youtube" target="_blank" rel="noopener">
+          <span class="sns-icon"><img src="images/icon-youtube.png" alt="" loading="lazy"></span>
+          <span class="sns-name">유튜브</span>
+          <span class="sns-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="https://www.facebook.com/WCF.KR" class="sns-facebook" target="_blank" rel="noopener">
+          <span class="sns-icon"><img src="images/icon-facebook.png" alt="" loading="lazy"></span>
+          <span class="sns-name">페이스북</span>
+          <span class="sns-arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 7. 하단 정보 ===== -->
+  <footer class="footer" id="about">
+    <div class="inner">
+      <div class="footer-links">
+        <a href="#"><strong>개인정보처리방침</strong></a>
+        <a href="#">이용약관</a>
+        <a href="#">이메일무단수집거부</a>
+      </div>
+      <hr>
+      <div class="footer-info">
+        <div>
+          <img class="logo" src="images/logo-white.png" alt="원주문화재단" loading="lazy">
+          <p class="address">
+            26441 강원특별자치도 원주시 향교길 77 남산골문화센터 4층<br>
+            대표전화 | 033-763-9114<br>
+            팩스 | 033-763-9631<br>
+            이메일 | info@wjcf.or.kr
+          </p>
+          <p class="copyright">© 2026 Wonju Culture Foundation. All rights reserved.</p>
+        </div>
+        <!-- 패밀리 사이트 -->
+        <div class="family">
+          <ul class="family-list">
+            <li><a href="https://www.wonju.go.kr/www/index.do" target="_blank" rel="noopener">원주시청</a></li>
+            <li><a href="https://www.wjmunwha.or.kr/" target="_blank" rel="noopener">원주문화원</a></li>
+            <li><a href="https://www.wonju.go.kr/tour/index.do" target="_blank" rel="noopener">원주문화관광</a></li>
+            <li><a href="https://lib.wonju.go.kr/portal/main" target="_blank" rel="noopener">원주시립중앙도서관</a></li>
+            <li><a href="https://lib.wonju.go.kr/jc/main" target="_blank" rel="noopener">중천철학도서관</a></li>
+            <li><a href="http://www.wjacp.kr/" target="_blank" rel="noopener">남산골문화센터</a></li>
+            <li><a href="https://wjccc.or.kr/" target="_blank" rel="noopener">원주생활문화센터</a></li>
+            <li><a href="https://whm.wonju.go.kr/whm/main.php" target="_blank" rel="noopener">원주역사박물관</a></li>
+            <li><a href="https://www.wonju.go.kr/tojipark/index.do" target="_blank" rel="noopener">박경리문학공원</a></li>
+            <li><a href="https://www.hanjipark.com/main.php" target="_blank" rel="noopener">한지테마파크</a></li>
+            <li><a href="https://www.museumsan.org/" target="_blank" rel="noopener">뮤지엄산</a></li>
+            <li><a href="https://www.wonju.go.kr/arts/main.html" target="_blank" rel="noopener">원주시립예술단</a></li>
+            <li><a href="http://www.artwonju.or.kr/" target="_blank" rel="noopener">원주예총</a></li>
+            <li><a href="https://blog.naver.com/wjcity0611" target="_blank" rel="noopener">원주시도시재생지원센터</a></li>
+            <li><a href="http://www.wjcoop.or.kr/" target="_blank" rel="noopener">원주협동사회경제네트워크</a></li>
+            <li><a href="https://www.nts.go.kr/" target="_blank" rel="noopener">국세청</a></li>
+          </ul>
+          <button type="button" class="family-site" aria-expanded="false">
+            패밀리 사이트
+            <span class="chevron" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- TOP 버튼 -->
+    <a href="#" class="top-btn" aria-label="맨 위로">
+      <span class="top-chevron" aria-hidden="true"></span>
+      TOP
+    </a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
