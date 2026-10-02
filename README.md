@@ -2,7 +2,7 @@
 
 ![미리보기](images/og-image.jpg)
 
-원주문화재단 웹사이트 메인 페이지를 새로 디자인하고, HTML · CSS · JavaScript로 직접 구현한 포트폴리오 작업입니다.
+원주문화재단 웹사이트 메인 페이지를 새로 디자인하고, HTML · CSS · JavaScript로 구현한 포트폴리오 작업입니다.<br>
 화면 속 행사와 소식은 **2026년 10월 2일 기준**입니다.
 
 ## 주요 기능
@@ -34,5 +34,5 @@ images/      이미지
 
 ## 디자인 시스템
 
-- **컬러** : MAIN `#523767` · POINT `#DE4A7C` · TEXT `#26232B` · SUB TEXT · BG `#F4F4F4`
+- **컬러** : MAIN `#523767` · POINT `#DE4A7C` · TEXT `#26232B` · SUB TEXT `#6e6874` · BG `#F4F4F4`
 - **글꼴** : Pretendard (섹션 제목 · 카드 제목 · 본문 · 분류명 · 설명 5단계)
